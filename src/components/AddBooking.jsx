@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import NavBar from './NavBar'
 
 const AddBooking = () => {
 
@@ -55,6 +56,8 @@ const AddBooking = () => {
     return (
 
         <div className="ev-page">
+
+            <NavBar/>
 
             <div className="container py-5">
 

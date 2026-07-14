@@ -275,3 +275,143 @@
 
     font-weight: 700;
 }
+
+/* EV Navbar */
+
+.ev-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071f2a,
+            #0b3542,
+            #126477
+        );
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid rgba(32, 217, 166, 0.25);
+
+    box-shadow:
+        0 5px 25px rgba(7, 31, 42, 0.18);
+}
+
+
+/* Brand */
+
+.ev-navbar-brand {
+    color: #ffffff !important;
+
+    font-size: 21px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease;
+}
+
+.ev-navbar-brand:hover {
+    color: #20d9a6 !important;
+}
+
+
+/* Navigation Links */
+
+.ev-nav-link {
+    position: relative;
+
+    color: rgba(255, 255, 255, 0.88) !important;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    padding: 10px 18px !important;
+
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+}
+
+.ev-nav-link:hover {
+    color: #20d9a6 !important;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    transform: translateY(-1px);
+}
+
+
+/* Underline Effect */
+
+.ev-nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 3px;
+
+    width: 0;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        #20d9a6,
+        #19bfe5
+    );
+
+    border-radius: 10px;
+
+    transform: translateX(-50%);
+
+    transition: width 0.3s ease;
+}
+
+.ev-nav-link:hover::after {
+    width: 55%;
+}
+
+
+/* Mobile Toggle */
+
+.ev-navbar .navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
+
+    border-radius: 9px;
+
+    padding: 7px 10px;
+}
+
+.ev-navbar .navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.ev-navbar .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+
+/* Responsive */
+
+@media (max-width: 991px) {
+
+    .ev-navbar .navbar-nav {
+        margin-top: 15px;
+        padding: 10px 0;
+    }
+
+    .ev-nav-link {
+        margin-bottom: 5px;
+
+        padding: 11px 14px !important;
+    }
+
+    .ev-nav-link::after {
+        display: none;
+    }
+}

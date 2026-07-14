@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import NavBar from './NavBar'
 
 const ViewBooking = () => {
 
@@ -38,6 +39,8 @@ const ViewBooking = () => {
     return (
 
         <div className="ev-page">
+
+            <NavBar/>
 
             <div className="container-fluid px-4 py-5">
 
