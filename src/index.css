@@ -1,0 +1,196 @@
+/* EV Charging Page */
+
+.ev-page {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fcfb,
+            #ffffff,
+            #f2faf8
+        );
+}
+
+
+/* EV Charging Page */
+
+.ev-page {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fcfb,
+            #ffffff,
+            #f2faf8
+        );
+}
+
+/* EV Header */
+
+.ev-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin:
+        0 auto 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #19d9a4,
+            #0fa9d7
+        );
+
+    border-radius: 18px;
+
+    font-size: 28px;
+
+    box-shadow:
+        0 10px 30px rgba(25, 217, 164, 0.3);
+}
+
+.ev-title {
+    color: #0b2733;
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.ev-subtitle {
+    color: #5e777d;
+
+    font-size: 15px;
+}
+
+
+/* EV Form Labels */
+
+.ev-card .form-label {
+    color: #163a43;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+
+/* EV Inputs */
+
+.ev-card .form-control,
+.ev-card select {
+    height: 50px;
+
+    padding:
+        0 18px;
+
+    background: #f7fbfb;
+
+    border:
+        1px solid #d2e2e2;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    color: #17343d;
+
+    transition:
+        all 0.3s ease;
+}
+
+.ev-card .form-control:hover,
+.ev-card select:hover {
+    border-color: #38bfa1;
+}
+
+.ev-card .form-control:focus,
+.ev-card select:focus {
+    background: #ffffff;
+
+    border-color: #18c99b;
+
+    box-shadow:
+        0 0 0 0.22rem
+        rgba(24, 201, 155, 0.14);
+}
+
+.ev-card ::placeholder {
+    color: #9aabad;
+}
+
+
+/* EV Submit Button */
+
+.ev-submit-btn {
+    background:
+        linear-gradient(
+            135deg,
+            #16c995,
+            #079fc5
+        );
+
+    color: #ffffff;
+
+    border: none;
+
+    padding:
+        16px 50px;
+
+    border-radius: 50px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 12px 30px
+        rgba(15, 190, 160, 0.3);
+
+    transition:
+        all 0.3s ease;
+}
+
+.ev-submit-btn:hover {
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 18px 35px
+        rgba(15, 190, 160, 0.4);
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .ev-card {
+        padding: 28px 22px;
+
+        border-radius: 20px;
+    }
+
+    .ev-title {
+        font-size: 23px;
+
+        letter-spacing: 2px;
+    }
+
+    .ev-submit-btn {
+        width: 100%;
+
+        padding:
+            15px 20px;
+    }
+}
