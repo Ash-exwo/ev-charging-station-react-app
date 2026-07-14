@@ -1,0 +1,417 @@
+/* EV Charging Page */
+
+.ev-page {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fcfb,
+            #ffffff,
+            #f2faf8
+        );
+}
+
+
+/* EV Charging Page */
+
+.ev-page {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fcfb,
+            #ffffff,
+            #f2faf8
+        );
+}
+
+/* EV Header */
+
+.ev-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin:
+        0 auto 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #19d9a4,
+            #0fa9d7
+        );
+
+    border-radius: 18px;
+
+    font-size: 28px;
+
+    box-shadow:
+        0 10px 30px rgba(25, 217, 164, 0.3);
+}
+
+.ev-title {
+    color: #0b2733;
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.ev-subtitle {
+    color: #5e777d;
+
+    font-size: 15px;
+}
+
+
+/* EV Form Labels */
+
+.ev-card .form-label {
+    color: #163a43;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+
+/* EV Inputs */
+
+.ev-card .form-control,
+.ev-card select {
+    height: 50px;
+
+    padding:
+        0 18px;
+
+    background: #f7fbfb;
+
+    border:
+        1px solid #d2e2e2;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    color: #17343d;
+
+    transition:
+        all 0.3s ease;
+}
+
+.ev-card .form-control:hover,
+.ev-card select:hover {
+    border-color: #38bfa1;
+}
+
+.ev-card .form-control:focus,
+.ev-card select:focus {
+    background: #ffffff;
+
+    border-color: #18c99b;
+
+    box-shadow:
+        0 0 0 0.22rem
+        rgba(24, 201, 155, 0.14);
+}
+
+.ev-card ::placeholder {
+    color: #9aabad;
+}
+
+
+/* EV Submit Button */
+
+.ev-submit-btn {
+    background:
+        linear-gradient(
+            135deg,
+            #16c995,
+            #079fc5
+        );
+
+    color: #ffffff;
+
+    border: none;
+
+    padding:
+        16px 50px;
+
+    border-radius: 50px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 12px 30px
+        rgba(15, 190, 160, 0.3);
+
+    transition:
+        all 0.3s ease;
+}
+
+.ev-submit-btn:hover {
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 18px 35px
+        rgba(15, 190, 160, 0.4);
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .ev-card {
+        padding: 28px 22px;
+
+        border-radius: 20px;
+    }
+
+    .ev-title {
+        font-size: 23px;
+
+        letter-spacing: 2px;
+    }
+
+    .ev-submit-btn {
+        width: 100%;
+
+        padding:
+            15px 20px;
+    }
+}
+
+/* EV Booking Table */
+
+.ev-table {
+    margin-top: 20px;
+    white-space: nowrap;
+}
+
+.ev-table thead th {
+    background: linear-gradient(
+        135deg,
+        #0b3542,
+        #126477
+    );
+
+    color: #ffffff;
+
+    padding: 16px 18px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    border: none;
+}
+
+.ev-table tbody td {
+    padding: 16px 18px;
+
+    color: #29454d;
+
+    font-size: 14px;
+
+    border-bottom: 1px solid #e5eeee;
+}
+
+.ev-table tbody tr {
+    transition: all 0.25s ease;
+}
+
+.ev-table tbody tr:hover {
+    background-color: #f0fbf8;
+}
+
+.ev-badge {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    background: rgba(22, 201, 149, 0.12);
+
+    color: #078866;
+
+    border: 1px solid rgba(22, 201, 149, 0.25);
+
+    border-radius: 50px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.ev-bay-badge {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    background: rgba(7, 159, 197, 0.12);
+
+    color: #087c99;
+
+    border: 1px solid rgba(7, 159, 197, 0.25);
+
+    border-radius: 50px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+/* EV Navbar */
+
+.ev-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071f2a,
+            #0b3542,
+            #126477
+        );
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid rgba(32, 217, 166, 0.25);
+
+    box-shadow:
+        0 5px 25px rgba(7, 31, 42, 0.18);
+}
+
+
+/* Brand */
+
+.ev-navbar-brand {
+    color: #ffffff !important;
+
+    font-size: 21px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease;
+}
+
+.ev-navbar-brand:hover {
+    color: #20d9a6 !important;
+}
+
+
+/* Navigation Links */
+
+.ev-nav-link {
+    position: relative;
+
+    color: rgba(255, 255, 255, 0.88) !important;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    padding: 10px 18px !important;
+
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+}
+
+.ev-nav-link:hover {
+    color: #20d9a6 !important;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    transform: translateY(-1px);
+}
+
+
+/* Underline Effect */
+
+.ev-nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 3px;
+
+    width: 0;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        #20d9a6,
+        #19bfe5
+    );
+
+    border-radius: 10px;
+
+    transform: translateX(-50%);
+
+    transition: width 0.3s ease;
+}
+
+.ev-nav-link:hover::after {
+    width: 55%;
+}
+
+
+/* Mobile Toggle */
+
+.ev-navbar .navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
+
+    border-radius: 9px;
+
+    padding: 7px 10px;
+}
+
+.ev-navbar .navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.ev-navbar .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+
+/* Responsive */
+
+@media (max-width: 991px) {
+
+    .ev-navbar .navbar-nav {
+        margin-top: 15px;
+        padding: 10px 0;
+    }
+
+    .ev-nav-link {
+        margin-bottom: 5px;
+
+        padding: 11px 14px !important;
+    }
+
+    .ev-nav-link::after {
+        display: none;
+    }
+}
